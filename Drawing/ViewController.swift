@@ -12,7 +12,7 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
 
     private let canvasView: PKCanvasView = {
        
-       let canvas = PKCanvasView()
+        let canvas = PKCanvasView()
         canvas.drawingPolicy = .anyInput
         return canvas
     }()
