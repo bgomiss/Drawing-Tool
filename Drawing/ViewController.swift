@@ -40,6 +40,8 @@ class ViewController: UIViewController, PKCanvasViewDelegate {
         canvasView.becomeFirstResponder()
     }
     
+    // Delegate Methods
+    
     func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
         
     }
