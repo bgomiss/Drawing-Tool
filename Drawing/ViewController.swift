@@ -24,6 +24,7 @@ class ViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserv
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         canvasView.drawing = drawing
         canvasView.delegate = self
         canvasView.alwaysBounceVertical = true
@@ -88,7 +89,7 @@ class ViewController: UIViewController, PKCanvasViewDelegate, PKToolPickerObserv
         let contentHeight: CGFloat
         
         if !drawing.bounds.isNull {
-            contentHeight = max(canvasView.bounds.height, (drawing.bounds.maxY + self.canvasOverScrollHeight) * canvasView.zoomScale)
+            contentHeight = max(canvasView.bounds.height, (drawing.bounds.maxY + self.canvasOverScrollHeight) * (canvasView.zoomScale))
         } else {
             contentHeight = canvasView.bounds.height
         }
