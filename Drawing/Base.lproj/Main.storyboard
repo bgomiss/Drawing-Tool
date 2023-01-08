@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FOv-FQ-irR" customClass="PKCanvasView">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="389" height="843"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -27,11 +27,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Drawing Tool" id="T7R-MG-ztM">
-                        <barButtonItem key="leftBarButtonItem" systemItem="camera" id="9Dd-ve-Kmb">
-                            <connections>
-                                <action selector="saveToCameraRoll:" destination="BYZ-38-t0r" id="OaJ-6n-gIL"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem systemItem="camera" id="9Dd-ve-Kmb">
+                                <connections>
+                                    <action selector="saveToCameraRoll:" destination="BYZ-38-t0r" id="OaJ-6n-gIL"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="undo" id="7lK-E8-Q6w">
+                                <connections>
+                                    <action selector="undo:" destination="dkx-z0-nzr" id="Nuo-q2-Rci"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                         <barButtonItem key="rightBarButtonItem" title="Pencil" id="gHQ-di-RQE">
                             <connections>
                                 <action selector="fingerOrPencil:" destination="BYZ-38-t0r" id="QW7-KS-DKq"/>
